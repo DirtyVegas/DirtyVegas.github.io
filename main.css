@@ -3,8 +3,6 @@ body
     background-color: dodgerblue;
     font-family: "Carter One";
     text-align: center;
-    background-image: url("assets/TGBLogoNew.png");
-    background-size: 112px;
     line-height: 1.5;
 }
 .container {
@@ -69,11 +67,18 @@ header {
 footer{
     border-top:1px solid gold ;
     margin-top: 40px;
+    width: 100%;
     padding: 20px;
+    background-color: white;
 }
 
 .border-right {
     border-right: 1px solid #dee2e6!important;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
 }
 
 /* =======Media Query for Desktop, Tab and Mobile Screen */
