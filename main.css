@@ -146,6 +146,10 @@ header {
     padding-left: 15px;
 }
 
+.reading-list {
+    list-style-type: none;
+}
+
 footer{
     border-top:1px solid gold;
     margin-top: 40px;
