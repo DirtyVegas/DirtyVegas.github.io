@@ -3,6 +3,8 @@ body
     background-image: url("images/background-photo/computer.jpeg");
     text-align: center;
     line-height: 1.5;
+    position: relative;
+    min-height: 100%;
 }
 
 .topnav {
@@ -134,6 +136,11 @@ header {
     margin-bottom: 20px;
     border-bottom: 1px solid gold;
     padding: 0 15px;
+}
+
+.main-page-subheader {
+    color: white;
+    font-size: 35px;
 }
 
 .ml-auto, .mx-auto {
