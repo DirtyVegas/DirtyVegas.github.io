@@ -36,6 +36,19 @@ body
     display: none;
   }
 
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .topnav .active i {
+    animation: spin 2s linear infinite; /* Adjust the duration and timing as needed */
+  }
+
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
