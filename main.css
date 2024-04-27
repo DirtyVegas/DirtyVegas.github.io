@@ -131,7 +131,7 @@ a:hover { text-shadow: 0 0 15px white; }
     margin-right: 40px; 
 }
 .list-inline-item:not(:last-child) {
-    margin-right: 0.5rem;
+    margin-right: 2.5rem;
 }
 .social-icon {
   width: 50px;
