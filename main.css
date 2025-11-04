@@ -223,3 +223,72 @@ footer{
         max-width: 1140px;
     }
 }
+
+    /* Center the whole section’s contents */
+    #goodreads-widget-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;         /* centers children horizontally */
+        gap: 20px;                   /* space between GR and Substack */
+        padding: 16px 0;
+    }
+
+    /* Goodreads container: centered, fluid up to 575px */
+    #goodreads-widget {
+        width: 100%;
+        max-width: 575px;
+        text-align: center;
+        font-family: georgia, serif;
+    }
+
+    /* Make the Goodreads iframe fluid with a fixed aspect ratio */
+    #goodreads-widget #the_iframe {
+        width: 100%;
+        aspect-ratio: 575 / 200;     /* keeps the original ratio */
+        height: auto;                /* auto-calculated from width */
+        background: #fff;
+        border: 0;
+    }
+
+    /* Optional: tweak text/link styles */
+    #goodreads-widget h1 {
+        font-weight: normal;
+        font-size: 16px;
+        border-bottom: 1px solid #BBB596;
+        margin-bottom: 0;
+    }
+    #goodreads-widget a {
+        text-decoration: none;
+        color: #DDAC17;
+    }
+    #goodreads-widget a:hover { text-decoration: underline; }
+    #gr_footer {
+        width: 100%;
+        border-top: 1px solid #BBB596;
+        text-align: right;
+    }
+    #goodreads-widget .gr_branding {
+        color: #382110;
+        font-size: 11px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    /* Substack: responsive */
+    .embed-substack {
+        width: 100%;
+        max-width: 480px;
+    }
+    .embed-substack iframe {
+        width: 100%;
+        aspect-ratio: 480 / 320;     /* keeps it proportional */
+        height: auto;
+        background: #fff;
+        border: 1px solid #EEE;
+    }
+
+    /* Small-screen polish */
+    @media (max-width: 480px) {
+        #goodreads-widget h1 { font-size: 15px; }
+        #gr_footer { text-align: center; }
+    }
+
